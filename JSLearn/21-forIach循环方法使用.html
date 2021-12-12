@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gino</title>
+</head>
+
+<script>
+let lessons = [
+    { title: "媒体查询响应式布局", category:"css"},
+    { title: "FLEX 弹性盒模型", category:"css"},
+    { title: "MYSQL多表查询随意操作", category:"mysql"},
+];
+
+// for (let i = 0; i < lessons.length; i++) {
+//     lessons[i].title = `后盾人${lessons[i].title}`;
+// }
+
+// for (const value of lessons) {
+//     value.title = `后盾人,${value.title}`;
+// }
+
+// for (const key in lessons) {
+//     lessons[key].title = `后盾人,${lessons[key].title}`;
+// }
+//
+// console.table(lessons)
+
+lessons.forEach(function (item, index, lessons) {
+    // console.table(item);
+    // console.table(index);
+    // console.table(lessons);
+
+    item.title = item.title.substr(0, 2)
+})
+console.table(lessons)
+</script>
+
+<body>
+
+</body>
+</html>
