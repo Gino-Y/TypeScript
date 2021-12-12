@@ -20,20 +20,12 @@ let lessons = [
 //     value.title = `后盾人,${value.title}`;
 // }
 
-// for (const key in lessons) {
-//     lessons[key].title = `后盾人,${lessons[key].title}`;
-// }
-//
-// console.table(lessons)
+for (const key in lessons) {
+    lessons[key].title = `后盾人,${lessons[key].title}`;
+}
 
-lessons.forEach(function (item, index, lessons) {
-    // console.table(item);
-    // console.table(index);
-    // console.table(lessons);
-
-    item.title = item.title.substr(0, 2)
-})
 console.table(lessons)
+
 </script>
 
 <body>
